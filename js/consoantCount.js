@@ -9,7 +9,7 @@ function consonantCount(str) {
             count++
         }
     })
-    console.log(count)
+    return count
   }
   consonantCount('012345_Cb')
   consonantCount('0123456789')
