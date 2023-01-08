@@ -15,6 +15,6 @@ function high(x){
     })
     return high
   }
- high('aaa ')
- high('d bb')
-   high('bb d')
+high('aaa ')
+high('d bb')
+high('bb d')
