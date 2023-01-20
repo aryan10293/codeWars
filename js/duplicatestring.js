@@ -16,6 +16,6 @@ function duplicateEncode(word){
         }
       }
     })
-  
-  return code.join('')
+   code = code.join
+  return code
 }
