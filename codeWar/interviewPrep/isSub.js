@@ -7,6 +7,7 @@ function isSubsequence(word, string) {
   let wordP = 0
   let stringP = 0
   while(stringP < string.length){
+    console.log(string.charAt(stringP), word.charAt(wordP))
     if(string.charAt(stringP) === word.charAt(wordP)){
         wordP++
         if(wordP === word.length) return true
