@@ -14,7 +14,20 @@ var maxSubArray = function(nums) {
 
     return maxSum;
 };
+var maxSubArray = function(nums) {
 
+    let maxSum = nums[0]
+    let tempSum = nums[0] ;
+    for(let i = 1; i<nums.length; i++){
+        if(tempSum + nums[i] > nums[i]){
+            tempSum += nums[i]
+        } else {
+            tempSum = nums[i]
+        }
+        maxSum = Math.max(tempSum,maxSum)
+    }
+    return maxSum
+};
 var maxSubArray = function(nums) {
     let total = nums.reduce((a,b) => {return a+b}, 0)
     let number = nums.length
