@@ -42,7 +42,7 @@ var maxSubArray = function(nums) {
         for(let j = number - i; j<=number; j++){
             let subTotal = nums.slice(cool, j).reduce((a,b) => {return a+b}, 0)
              if(subTotal>total) total = subTotal
-            cool++
+            cool+=1
         }
     }
     return total
