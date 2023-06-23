@@ -2,21 +2,17 @@ var myPow = function(x, n) {
     let num = n
     let total = x
     let condi = false
-    function idk(num){
-        if(num>0){
-            if(num === 1){
-                return 
-            } else {
-                total*=x
-            }
-            num--
-            idk(num)
-        } else {
-            condi = true
-            idk(Math.abs(num))
-        }
+    if(n < 0){
+        condi = true
+        n = Math.abs(n)
+    } else if (n === 0){
+        return 1
+    } else if(Math.abs(x) === 1){
+        return x
     }
-    idk(n)
+    for(let i = 0; i<n-1; i++){
+        total*=x
+    }
+    console.log(total)
    return condi ? 1/total : total
 };
-console.log(myPow(2,-2))
