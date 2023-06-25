@@ -11,7 +11,7 @@ var myPow = function(x, n) {
         return x
     }
     for(let i = 0; i<n-1; i++){
-        total*=x
+        total = total * x
     }
     console.log(total)
    return condi ? 1/total : total
