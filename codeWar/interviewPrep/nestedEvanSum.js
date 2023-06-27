@@ -1,5 +1,4 @@
 function nestedEvenSum(obj){
-    let answer = []
     let total = 0
     function helper(obj){
         for (let key in obj) {
@@ -12,7 +11,7 @@ function nestedEvenSum(obj){
         }
     }
     helper(obj)
-    console.log(total)
+    return total
 }
 var obj1 = {
   outer: 2,
