@@ -1,15 +1,11 @@
-const obj = {
-    stuff: "foo",
+let obj = {
+    num: 1,
+    test: [],
     data: {
-        val: {
-            thing: {
-                info: "bar",
-                moreInfo: {
-                    evenMoreInfo: {
-                        weMadeIt: "baz"
-                    }
-                }
-            }
+        val: 4,
+        info: {
+            isRight: true,
+            random: 66
         }
     }
 }
@@ -21,12 +17,18 @@ function collectStrings(obj){
             // Nested object found, recursively call the function
             helper(obj[key]);
             } else {
+            if(typeof obj[key] === 'number'){
+                console.log(obj[key])
+                obj[key] = `${obj[key]}`
+            } else if(typeof obj[key] === 'string'){
+                obj[key] = Number(obj[key])
+            }
             // Perform your desired action on the current property
-            answer[obj[key]] = answer[obj[key]] + 1 || 1
             }
         }
     }
     helper(obj)
-    return Object.keys(answer)
+    console.log(obj)
 }
+console.log(typeof true)
 collectStrings(obj)
