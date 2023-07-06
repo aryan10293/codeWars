@@ -5,10 +5,10 @@ var majorityElement = function(nums) {
     nums.forEach(x => {
         obj[`${x}`] = obj[`${x}`] + 1 || 1
     })
-    for(let key in obj){
-        if(obj[key] > total){
-            total = obj[key]
-            answer = key
+    for(let lol in obj){
+        if(obj[lol] > total){
+            total = obj[lol]
+            answer = lol
         }
     }
     return answer
