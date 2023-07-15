@@ -6,7 +6,7 @@ var numJewelsInStones = function(jewels, stones) {
     }
     for(let i = 0; i<stones.length; i++){
         if(numOfJew[stones[i]] !== undefined){
-            total++
+            total+=1
         }
     }
     
