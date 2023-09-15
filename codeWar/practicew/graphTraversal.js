@@ -43,15 +43,15 @@ a: {a}
 //         d: {e}
 //     }
 // }
-function isCyclic(rootNode){
+function isCyclic(rootNode) {
     let visited = []         // [rootNode, c , d, b]
     let toVisit = [rootNode] // []
-    while(toVisit.length !== 0){
+    while (toVisit.length !== 0) {
         let thisNode = toVisit.pop() // c // d // b
-        if(visited.includes(thisNode)) return true
+        if (visited.includes(thisNode)) return true
         visited.push(thisNode)
         let children = Object.keys(thisNode) // [d] // [e] // [] // []
         toVisit.concat(children)
-    } 
-    return false
+    }
+    return 0
 }
