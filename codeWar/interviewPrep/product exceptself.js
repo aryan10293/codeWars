@@ -14,3 +14,13 @@ var productExceptSelf = function(nums) {
     return answer
 };
 //solution is not optimal
+var productExceptSelf = function(nums) {
+    let answer = []
+    for(let i = 0; i<nums.length; i++){
+        let modifiedArray = nums.slice(0, i).concat(nums.slice(i + 1));
+        answer.push(modifiedArray.reduce((a,b) => a*b, 1))
+    }
+    return answer
+};
+
+// this solution is also not optimal
