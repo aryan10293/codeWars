@@ -29,3 +29,17 @@ var isHappy = function(n) {
      }
      return Number(answer) === 1 ? true : false
 };
+
+var isHappy = function(n) {
+    let answer = n.toString()
+    let lol = {}
+     while (answer !== 1){
+        answer = answer.toString().split('').map(x => Number(x) * Number(x)).reduce((a,b)=> {return a+b}, 0)
+        if(lol[answer]){
+            return false
+        } else {
+            lol[`${answer}`] = answer
+        }
+     }
+     return true
+};
