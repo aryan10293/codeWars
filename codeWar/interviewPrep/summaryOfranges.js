@@ -24,6 +24,5 @@ var summaryRanges = function(nums) {
             }
         }
     }
-    console.log(answer)
     return answer
 };
