@@ -8,7 +8,6 @@ var isSymmetric = function(root) {
     // if right.right !== left.left return false 
     // if right.left !== left.right return false
     // if root.left !== root.right reutrn false
-    // if root.right !== root.left reutrn false
     const recurse = (left, right) => {
         if(left === null && right === null) return true
         if(left === null || right === null || right.val !== left.val) return false
