@@ -12,7 +12,7 @@ var hasPathSum = function(root, targetSum) {
     // }
 
     // return imLost(root.val, root.left, root.right)
-
+    let cool = 0
     let path = false
     const imLost = (node, number) => {
         if(!node) return 
@@ -27,6 +27,6 @@ var hasPathSum = function(root, targetSum) {
         imLost(node.right, number)
 
     }
-    imLost(root, 0)
+    imLost(root, cool)
     return path
 };
