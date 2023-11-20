@@ -1,4 +1,4 @@
-var reverseBit = function(n) {
+var reverseBits = function(n) {
      let result = 0
      for(let i =0; i< 32; i++){
          let lastBit = n & 1
