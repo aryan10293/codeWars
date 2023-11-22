@@ -19,6 +19,24 @@ var merge = function(nums1, m, nums2, n) {
     console.log(nums1)
 };
 
+var merge = function(nums1, m, nums2, n) {
+    let index = 0
+    let index2 = 0
+    for(let i = 0; i<m+n; i++){
+        console.log('thid is running')
+        if(nums1[i] >= nums2[index2]){
+            nums1.splice(i, 0, nums2[index2])
+            index2++
+            nums1.pop()
+        }
+        if(nums1[i] === 0 && (nums1[i-1] > 0 || nums1[i] === 0)){
+            nums1[i] = nums2[index2]
+            index2++
+        }
+    }
+    console.log(nums1)
+};
+
 /// the abopve solutions isnot optimal and wontpass alot of test cases
 
 var merge = function(nums1, m, nums2, n) {
