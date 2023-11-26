@@ -7,3 +7,9 @@ var strStr = function(haystack, needle) {
     }
     return -1
 };
+
+// quiker version
+
+var strStr = function(haystack, needle) {
+    return haystack.indexOf(needle)
+};
