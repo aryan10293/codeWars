@@ -12,7 +12,7 @@ function isSubsequence(word, string) {
         wordP++
         if(wordP === word.length) return true
     }
-    stringP++
+    stringP += 1
   }
   return false
 }
