@@ -46,7 +46,7 @@ var isIsomorphic = function(s, t) {
     console.log(sObj, tObj)
     sObj = Object.values(sObj)
     tObj = Object.values(tObj)
-    for()
+ 
     for(let i = 0; i<sObj.length; i++){
         if(sObj[i] !== tObj[i]) return false
     }
