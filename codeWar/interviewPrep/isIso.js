@@ -23,3 +23,32 @@ var isIsomorphic = function(s, t) {
     }
     return true 
 };
+
+// goota keep working on this one 
+
+var isIsomorphic = function(s, t) {
+    let sObj = {}
+    let tObj = {}
+    for(let i = 0; i<s.length; i++){
+        if(!sObj[s[i]]){
+            sObj[s[i]] = 1
+        } else {
+            sObj[s[i]] = sObj[s[i]] + 1
+        }
+    }
+    for(let i = 0; i<t.length; i++){
+        if(!tObj[t[i]]){
+            tObj[t[i]] = 1
+        } else {
+            tObj[t[i]] = tObj[t[i]] + 1
+        }
+    }
+    console.log(sObj, tObj)
+    sObj = Object.values(sObj)
+    tObj = Object.values(tObj)
+    for()
+    for(let i = 0; i<sObj.length; i++){
+        if(sObj[i] !== tObj[i]) return false
+    }
+    return true
+};
