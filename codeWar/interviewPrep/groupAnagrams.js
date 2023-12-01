@@ -11,3 +11,18 @@ var groupAnagrams = function(strs) {
     }
     return Object.values(obj)
 };
+
+// this is a easy one nopw 
+
+var groupAnagrams = function(strs) {
+    let lmao = strs.map(x => x.split('').sort().join(''))
+    let obj = {}
+    for(let i = 0; i<lmao.length; i++){
+        if(!obj[lmao[i]]){
+            obj[lmao[i]] = [strs[i]]
+        } else {
+            obj[lmao[i]].push(strs[i])
+        }
+    }
+    return Object.values(obj)
+};
