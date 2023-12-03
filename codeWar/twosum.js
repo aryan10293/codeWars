@@ -23,14 +23,14 @@ function twoSum(numbers, target) {
     // if the difference is in the object reuturn true 
 
     // below is gfoign to be a obj that holds the numbers and its indices
-    let obj = {}
+    let lol = {}
 
     for(let i = 0; i<nums.length; i++){
         let cool = target - nums[i]
-        if(obj[cool]){
-            return [i, obj[cool][0]]
+        if(lol[cool]){
+            return [i, lol[cool][0]]
         } else {
-            obj[nums[i]] = [i]
+            lol[nums[i]] = [i]
         }
     }
 };
