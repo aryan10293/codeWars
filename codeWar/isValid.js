@@ -1,6 +1,6 @@
 var isValid = function(s) {
     let answer = []
-    let topOfArray = '[ { ('
+    let topOfArray = '[ {  ('
     let validBracket = '{} [] ()'
 
     for(let i = 0; i<s.length; i++){
