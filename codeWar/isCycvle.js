@@ -8,3 +8,5 @@ var hasCycle = function(head) {
     }
     return false
 };
+
+// ionn really get the question to this problem but the code isnt that bas to implement if i see it in a interview
