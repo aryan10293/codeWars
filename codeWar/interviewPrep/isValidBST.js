@@ -12,3 +12,16 @@ var isValidBST = function(root) {
     idk(root)
     return isValid
 };
+
+// below is the correct code
+
+var isValidBST = function(root) {
+    const idk = (node, min, max) => {
+        if(!node) return true
+
+        if(node.val >= max || node.val <= min) return false
+
+        return idk(node.left, min, node.val) && idk(node.right, node.val, max)
+    }
+    idk(root, -infinity, infinty)
+}
