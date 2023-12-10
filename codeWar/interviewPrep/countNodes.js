@@ -12,3 +12,18 @@ var countNodes = function(root) {
 
   return count
 };
+
+// this one is hella easy
+
+var countNodes = function(root) {
+    let count = 0
+    let countNodes = (node) => {
+        if(!node) return
+        count++
+        countNodes(node.right)
+        countNodes(node.left)
+    }
+
+    countNodes(root)
+    return count 
+};
