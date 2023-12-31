@@ -15,3 +15,5 @@ function capitalize(s){
     }).join('')
     return [capEven,capOdd];
   };
+
+  // drej needs to get better 
