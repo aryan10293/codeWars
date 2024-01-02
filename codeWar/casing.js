@@ -17,3 +17,4 @@ function capitalize(s){
   };
 
   // drej needs to get better 
+  // drej got a little better
