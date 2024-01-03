@@ -18,3 +18,4 @@ function capitalize(s){
 
   // drej needs to get better 
   // drej got a little better
+  // im getting a rythem again  just gotta start working on my preject and doing some leetcode but everything else is going good
