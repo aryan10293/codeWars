@@ -21,3 +21,4 @@ function capitalize(s){
   // im getting a rythem again  just gotta start working on my preject and doing some leetcode but everything else is going good
   // lit two off days. started class. filmed two tiktoks 3 tiktok posted 1. did little homework, wasnt to hard lol. uhhhh still gotta work on my project though
   // avgerage day
+  // got homeowork done  got yoga done posted all my tiktoks  just one more yoga session  lets get it
