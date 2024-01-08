@@ -23,3 +23,4 @@ function capitalize(s){
   // avgerage day
   // got homeowork done  got yoga done posted all my tiktoks  just one more yoga session  lets get it
   // had an amazing workout week did all 4 lift all 3 yoga session made 3 tiktoks for next week lets make 1 more tiktok continue the workout past lets get some project stuff done. you got homework due tomorrow.
+  // nothing special today monday should be lit  record a back day workout and get the week started right
