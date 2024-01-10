@@ -25,4 +25,5 @@ function capitalize(s){
   // had an amazing workout week did all 4 lift all 3 yoga session made 3 tiktoks for next week lets make 1 more tiktok continue the workout past lets get some project stuff done. you got homework due tomorrow.
   // nothing special today monday should be lit  record a back day workout and get the week started right
   // just another grind it out monday. lets kill these 2 off days man!
+  // aight brotha you gotta start working on thios project other than that great day. its not over got more work to do but gotta write this before 12
   
