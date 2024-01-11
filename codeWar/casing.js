@@ -26,4 +26,4 @@ function capitalize(s){
   // nothing special today monday should be lit  record a back day workout and get the week started right
   // just another grind it out monday. lets kill these 2 off days man!
   // aight brotha you gotta start working on thios project other than that great day. its not over got more work to do but gotta write this before 12
-  
+  // hell of a two off days brother. homework mostly done. still gotta work on the personal project make and post 2 more tiktoks but. great way to start off gthe year so far. but still alot of room to improve. lets keep fighting day by day
