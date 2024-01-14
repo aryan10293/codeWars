@@ -1,20 +1,20 @@
-function capitalize(s){
-    let capOdd = s.split('').map((x,a) => {
-      if(a%2 === 1){
-        return x.toUpperCase()
-      } else {
-        return x
-      }
-    }).join('')
-      let capEven = s.split('').map((x,a) => {
-      if(a%2 === 0){
-        return x.toUpperCase()
-      } else {
-        return x
-      }
-    }).join('')
-    return [capEven,capOdd];
-  };
+function capitalize(s) {
+  let capOdd = s.split('').map((x, a) => {
+    if (a % 2 === 1) {
+      return x.toUpperCase()
+    } else {
+      return x
+    }
+  }).join('')
+  let capEven = s.split('').map((x, a) => {
+    if (a % 2 === 0) {
+      return x.toUpperCase()
+    } else {
+      return x
+    }
+  }).join('')
+  return [capEven, capOdd];
+};
 
   // drej needs to get better 
   // drej got a little better
@@ -28,3 +28,5 @@ function capitalize(s){
   // aight brotha you gotta start working on thios project other than that great day. its not over got more work to do but gotta write this before 12
   // hell of a two off days brother. homework mostly done. still gotta work on the personal project make and post 2 more tiktoks but. great way to start off gthe year so far. but still alot of room to improve. lets keep fighting day by day
   // fweeling good kinda
+
+  // cooked
