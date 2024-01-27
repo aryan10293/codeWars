@@ -64,3 +64,21 @@ while line:
         if min > int(i):
             min = int(i)
     print(name, min, max)
+
+desktop_folder_path = os.path.expanduser('~/Desktop/pythonHW/t.txt')
+lol = ''
+with open(desktop_folder_path, 'r') as file:
+    # Read the entire content of the file into a string
+    lol = file.read()
+lol = lol.split('\n')
+for i in lol:
+    print('t', i)
+vFile = desktop_folder_path = os.path.expanduser('~/Desktop/pythonHW/v.txt')
+vFileContents = ''
+with open(vFile, 'r') as file:
+    # Read the entire content of the file into a string
+    vFileContents = file.read()
+vFileContents = vFileContents.split(',')
+for i in vFileContents:
+    print('v', i)
+ 
