@@ -81,4 +81,33 @@ with open(vFile, 'r') as file:
 vFileContents = vFileContents.split(',')
 for i in vFileContents:
     print('v', i)
- 
+
+
+ import os
+
+desktop_folder_path = os.path.expanduser('~/Desktop/homeworkk/tvdata.txt')
+
+lol = ''
+lmao = []
+time = 'time.txt'
+velocity = 'velocity.txt'
+folder_path = os.path.expanduser('~/Desktop/homeworkk')
+
+time_path = os.path.join(folder_path, time)
+velo_path = os.path.join(folder_path, velocity)
+
+with open(desktop_folder_path, 'r') as file:
+    lol = file.read()
+    
+lol = lol.split(',\n')
+
+for i in lol:
+    lmao = i.split('\n')
+    
+with open(time_path, "w") as output_file:
+    for i in lmao:
+        output_file.write(i.split(',')[0])
+
+with open(velo_path, "w") as output_file:
+    for i in lmao:
+        output_file.write(i.split(',')[1])
