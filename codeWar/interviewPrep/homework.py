@@ -83,7 +83,7 @@ for i in vFileContents:
     print('v', i)
 
 
- import os
+# import os
 
 desktop_folder_path = os.path.expanduser('~/Desktop/homeworkk/tvdata.txt')
 
@@ -98,12 +98,12 @@ velo_path = os.path.join(folder_path, velocity)
 
 with open(desktop_folder_path, 'r') as file:
     lol = file.read()
-    
+
 lol = lol.split(',\n')
 
 for i in lol:
     lmao = i.split('\n')
-    
+
 with open(time_path, "w") as output_file:
     for i in lmao:
         output_file.write(i.split(',')[0])
@@ -111,3 +111,35 @@ with open(time_path, "w") as output_file:
 with open(velo_path, "w") as output_file:
     for i in lmao:
         output_file.write(i.split(',')[1])
+
+
+answer = [0, 0, 0, 0, 0, 0]
+
+
+def roll():
+    return randint(1, 6)
+
+
+def stats():
+    for i in range(10):
+        num = roll()
+        answer[num-1] += 1
+    return answer
+
+
+print(stats())
+
+
+m = float(input("Enter a slope  "))
+b = float(input("Enter a y-intercept   "))
+answer = []
+
+
+def linear(m, b):
+    for number in range(-10, 11):
+        y = (m*number) + b
+        answer.append(y)
+    return answer
+
+
+print(linear(m, b))
