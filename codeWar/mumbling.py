@@ -4,7 +4,6 @@ def accum(st):
         lol += st[i].upper()
         for j in range(i):
             lol += st[i].lower()
-        lol  + = '-'
+        lol += '-'
     return lol[:-1]
     pass
-
