@@ -16,3 +16,16 @@ function persistence(num) {
     }
    }
  }
+
+ function persistence(num) {
+   //code me
+  let count = 0
+  num = num.toString()
+  while(num.length > 1){
+    let times = 1
+    for(i in num){ times = times * Number(num[i])}
+    num = times.toString()
+    count++
+  }
+  return count
+}
