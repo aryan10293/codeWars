@@ -9,5 +9,16 @@ function narcissistic(value) {
   }
   //only dealing with  whole numbers
   // return true of false
+
+  function narcissistic(value) {
+  // Code me to return true or false
+  value = value.toString()
+  let total = 0
+  for(let i in value){
+    total+= Math.pow(Number(value[i]), value.length)
+  }
+  return total === Number(value)
+}
+
   
   
