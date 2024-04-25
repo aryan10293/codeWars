@@ -29,3 +29,17 @@ function towerBuilder(n) {
     console.log(answer)
     return answer
   }
+
+  function towerBuilder(n) {
+  // build here
+  let arr = []
+  let i = 0
+  let count = 1
+  while(i<n){
+    i++
+    let space = (n - i)
+    arr.push(' '.repeat(space) + '*'.repeat(count) + ' '.repeat(space))
+    count+=2
+  }
+  return arr
+}
