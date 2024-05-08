@@ -34,3 +34,16 @@ function twoSum(numbers, target) {
         }
     }
 };
+
+// did the exact same thing as before
+function twoSum(numbers, target) {
+  let obj = {}
+  for(let i in numbers){
+    if(obj[target - numbers[i]]){
+      return [obj[target - numbers[i]][0], i]
+    } else {
+      obj[numbers[i]] = [i]
+    }
+  }
+    
+}
