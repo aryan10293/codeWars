@@ -13,4 +13,3 @@ def missing_no(nums):
             return nums[i] + 1
 
     #  Your code her
-e
